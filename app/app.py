@@ -7,6 +7,7 @@ import numpy as np
 import nltk
 import sys
 sys.path.append('../')
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import Mood_tracker.train as t
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
@@ -45,7 +46,7 @@ def clean_sentence(verification_data):
     # Removing word with @ sign as we dont need name tags of twitter
     line = " ".join(filter(lambda x:x[0]!='@', line.split()))
     # Remove punctuations and numbers from the line
-    punct = line.maketrans("","",'.*%$^0123456789#!][\?&/)/(+-<>')
+    punct = line.maketrans("","",r'.*%$^0123456789#!][\?&/)/(+-<>')
     result = line.translate(punct)
     # Tokenize the whole tweet sentence
     tokened_sentence = nltk.word_tokenize(result)
