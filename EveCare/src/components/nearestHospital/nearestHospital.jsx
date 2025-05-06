@@ -135,7 +135,7 @@ const NearHospital = () => {
 								src={
 									CurrentUser.photoURL != null
 										? CurrentUser?.photoURL
-										: "https://user-images.githubusercontent.com/86917304/189530487-4f2eba29-9268-4801-9f4f-b2a9b03948a1.png"
+										: ""
 								}
 								alt="..."
 							/>{" "}
