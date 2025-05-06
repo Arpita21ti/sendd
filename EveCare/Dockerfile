@@ -9,7 +9,7 @@ FROM python:3.10.7
 WORKDIR /app
 
 COPY ./requirements.txt .
-# RUN python -c "import nltk; nltk.download('punkt')"
+RUN python -c "import nltk; nltk.download('punkt')"
 
 # COPY ./tokenizers Appdata/Roaming/nltk_data/tokenizers
 
