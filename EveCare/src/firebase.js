@@ -12,12 +12,12 @@ import "firebase/compat/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-	apiKey: "AIzaSyC5uvEVrMvaEZzcO7QrV8u8oJZQXbgF6gs",
-	authDomain: "shewin-40205.firebaseapp.com",
-	projectId: "shewin-40205",
-	storageBucket: "shewin-40205.appspot.com",
-	messagingSenderId: "604340215105",
-	appId: "1:604340215105:web:082a7c4ea18084346515c0",
+	apiKey: "AIzaSyDytBF-35cCjz5u42fIsR-rzxma2UTcRVc",
+	authDomain: "evecare-cf2c3.firebaseapp.com",
+	projectId: "evecare-cf2c3",
+	storageBucket: "evecare-cf2c3.firebasestorage.app",
+	messagingSenderId: "931441990227",
+	appId: "1:931441990227:web:b8b1d077f86cd5e72684a6",
 };
 
 // Initialize Firebase
